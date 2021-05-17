@@ -4,9 +4,15 @@
     border: 0;
     
 }
+
+:root{
+    --color-green: #50fa7b;
+}
+
 body{
     background-color: #282a36;;
     font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
 header{
@@ -28,7 +34,7 @@ header div a{
 }
 
 header div a:hover{
-    color: #50fa7b;
+    color: var(--color-green);
     transition: color 700ms; 
 }
 
@@ -39,6 +45,30 @@ header div a:hover{
 
 #wrapper img{
     border-radius: 100%;
-    border:#50fa7b 5px solid ;
+    border:var(--color-green) 5px solid ;
     height: 200px;
+}
+
+#wrapper h1{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 700;
+}
+
+#wrapper h2{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+#wrapper p{
+    max-width: 550px;
+    font-size: 20px;
+    margin: 32px auto;
+}
+
+#wrapper p a {
+    color: var(--color-green);
 }
